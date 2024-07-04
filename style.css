@@ -190,25 +190,26 @@ section .header{
 
 footer{
     position: relative;
-    display: grid;
-    grid-template-columns: 400px repeat(2, 1fr);
+    display: flex;
     gap: 2rem;
+    justify-content: center;
 }
 
-footer .column .logo{
-    max-width: 100px;
-    margin-bottom: 2rem;
-}
 
-footer .column p{
-    color: #ccc;
+footer  .column .check-socials{
+    color: #cccccc;
     margin-bottom: 2rem;
+    position: flex;
+    display: flex;
+    justify-content: center;
 }
 
 footer .column .socials{
     display: flex;
     align-items: center;
     gap: 1rem;
+    justify-content: center;
+    top: 200px;
 }
 
 footer .column .socials a{
@@ -253,11 +254,14 @@ footer .column > a:hover{
     font-size: 1rem;
     text-align: center;
 }
-.privacy {
+.copyright a{
     font-size: 0.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #ccc;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 @media (width < 900px){
